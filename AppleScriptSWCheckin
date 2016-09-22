@@ -1,0 +1,52 @@
+--This program can be scheduled using the standard Mac OSX Calendar app. 
+
+set confirmationnumber to "CONFIRMATION #"
+set firstname to "FIRST NAME"
+set lastname to "LAST NAME"
+tell application "Google Chrome"
+	activate
+	open location "https://www.southwest.com/flight/retrieveCheckinDoc.html"
+	tell application "System Events"
+		delay 2
+		keystroke tab
+		keystroke tab
+		keystroke tab
+		keystroke tab
+		keystroke tab
+		keystroke tab
+		keystroke tab
+		keystroke tab
+		keystroke tab
+		keystroke tab
+		keystroke tab
+		keystroke tab
+		keystroke confirmationnumber
+		keystroke tab
+		keystroke firstname
+		keystroke tab
+		keystroke lastname
+		keystroke return
+		delay 1
+		tell application "System Events"
+			delay 2
+			keystroke tab
+			keystroke tab
+			keystroke tab
+			keystroke tab
+			keystroke tab
+			keystroke tab
+			keystroke tab
+			keystroke tab
+			keystroke tab
+			keystroke tab
+			keystroke tab
+			keystroke tab
+			keystroke tab
+			keystroke tab
+			keystroke tab
+			keystroke tab
+			keystroke return
+			delay 1
+		end tell
+	end tell
+end tell
